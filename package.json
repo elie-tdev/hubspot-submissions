@@ -1,6 +1,6 @@
 {
   "name": "hubspot-submissions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Custom React hooks for interacting with Hubspot Submissions API",
   "main": "./dist/index.js",
   "author": "Jouji Yoshino",
@@ -36,13 +36,13 @@
   },
   "keywords": [
     "react",
-    "react-hooks",
+    "react hooks",
     "react-hook",
-    "form",
-    "forms",
+    "submissions",
     "hubspot",
     "hubspot-api",
-    "hubspot-form"
+    "hubspot-form",
+    "hubspot-submissions"
   ],
   "license": "ISC",
   "husky": {
