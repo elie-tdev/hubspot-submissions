@@ -1,0 +1,53 @@
+{
+  "name": "hubspot-submissions",
+  "version": "1.0.0",
+  "description": "A Custom React hooks for interacting with Hubspot Submissions API",
+  "main": "./dist/index.js",
+  "author": "Jouji Yoshino",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-preset-minify": "^0.5.0",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react": "^16.8.0-alpha.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write --no-semi --single-quote --jsx-bracket-same-line",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:topfullstackdev/hubspot-submissions.git"
+  },
+  "keywords": [
+    "react",
+    "react-hooks",
+    "react-hook",
+    "form",
+    "forms",
+    "hubspot",
+    "hubspot-api",
+    "hubspot-form"
+  ],
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
